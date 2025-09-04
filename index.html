@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador High Tide - MTG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔹 High Tide 🔹</h1>
+        </header>
+        
+        <div class="counter-section">
+            <h2>Cada ilha gera:</h2>
+            <div class="island-input">
+                <input type="number" id="island-value" value="1" min="1">
+                <span class="mana-symbol">💧</span>
+            </div>
+        </div>
+        
+        <div class="counter-section">
+            <h2>Mana na Pool</h2>
+            <div class="mana-display" id="mana-counter">0</div>
+            <div class="buttons">
+                <button id="mana-add">+1</button>
+                <button id="mana-sub">-1</button>
+                <button id="mana-reset" class="reset-btn">Reset</button>
+            </div>
+            <button id="toggle-logs" class="logs-btn">📋 Exibir Logs</button>
+        </div>
+        
+        <div class="logs-section hidden">
+            <h3>Log de Ações</h3>
+            <div class="logs-container" id="logs-container">
+                <!-- Logs serão inseridos aqui pelo JavaScript -->
+            </div>
+            <div class="logs-buttons">
+                <button id="clear-logs" class="reset-btn">Limpar Logs da Sessão</button>
+                <button id="clear-all-logs" class="reset-btn">Limpar Todo Histórico</button>
+            </div>
+        </div>
+        
+        <footer>
+            ⚠️ Atenção: Alto risco do oponente morrer de tédio.
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+:root {
+    --bg-color: #0a1a2a;
+    --text-color: #e0e0e0;
+    --button-color: #1a3a5a;
+    --button-hover: #2a4a6a;
+    --mana-blue: #2b70b5;
+    --container-bg: rgba(10, 26, 42, 0.8);
+    --mana-white: #ffffff;
+    --mana-yellow: #ffcc00;
+    --mana-red: #ff3333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+    touch-action: manipulation;
+    background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--container-bg);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(43, 112, 181, 0.7);
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.counter-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(26, 58, 90, 0.3);
+    border: 1px solid rgba(43, 112, 181, 0.3);
+}
+
+.island-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.island-input input {
+    width: 80px;
+    padding: 12px;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--mana-blue);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-right: 15px;
+}
+
+.mana-display {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--mana-white);
+    text-shadow: 0 0 15px rgba(43, 112, 181, 0.5);
+    transition: color 0.3s ease;
+}
+
+.mana-yellow {
+    color: var(--mana-yellow);
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+.mana-red {
+    color: var(--mana-red);
+    text-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 60px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.logs-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 20px;
+}
+
+.mana-symbol {
+    color: var(--mana-blue);
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(43, 112, 181, 0.7);
+}
+
+.reset-btn {
+    background-color: #5a1a1a;
+}
+
+.reset-btn:hover {
+    background-color: #6a2a2a;
+}
+
+.logs-section {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(26, 58, 90, 0.3);
+    border: 1px solid rgba(43, 112, 181, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logs-section.hidden {
+    display: none;
+}
+
+.logs-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.log-entry {
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: monospace;
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.logs-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 500px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+    
+    button {
+        flex: 1 1 40%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .mana-display {
+        font-size: 3rem;
+    }
+}
