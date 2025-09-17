@@ -10,7 +10,7 @@ Marcador "Mana na Pool: " - Acompanhe e gerencie a quantidade total de mana azul
 Interface Intuitiva: Botões para adicionar/remover contadores de forma rápida durante partidas.
 
 Otimizado para Combo: Design focado na execução rápida de loops de mana e contagem precisa.
-<
+
 🚀 Como Usar
 
 Basta acessar a página abaixo:
