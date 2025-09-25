@@ -1,24 +1,24 @@
-High Tide Counter
-Um programa dedicado a jogadores de Magic: The Gathering que utilizam o combo High Tide, ajudando a gerenciar e calcular a geração massiva de mana azul durante a execução do combo.
+<h1> 🌊 High Tide Counter  </h1>
+<p>Um programa dedicado a jogadores do combo High Tide em MTG, auxiliando a gerenciar de forma mais eficiente a quantidade massiva de mana gerada para execução do combo.</p>
 
-✨ Funcionalidades
+<h3>✨ Funcionalidades</h3>
 
-Marcador "Cada ilha gera: " - Acompanha e gerencia quantas vezes o efeito do High Tide foi ativado.
+Marcador "cada ilha gera" - Contabilize quantas vezes a carta "High Tide" foi conjurada para contabilizar corretamente as manas a serem geradas pelas ilhas.
 
-Marcador "Mana na Pool: " - Acompanhe e gerencie a quantidade total de mana azul disponível na pool do jogador durante o combo.
+Marcador de mana na Pool - Contabilize a mana azul disponível na pool, adicionando ou subtraindo a quantidade.
 
 Interface Intuitiva: Botões para adicionar/remover contadores de forma rápida durante partidas.
 
 Otimizado para Combo: Design focado na execução rápida de loops de mana e contagem precisa.
 
-🚀 Como Usar
+<h3>🚀 Como Usar</h3>
 
 Basta acessar a página abaixo:
 https://high-tide-counter-hm5tfx2sb-jeans-projects-141a926c.vercel.app/
 
 
-📄 Licença
+<h3>📄 Licença</h3>
 Distribuído sob a licença MIT. Veja LICENSE para mais informações.
 
-
-Nota: Este programa não é afiliado à Wizards of the Coast®. Magic: The Gathering é uma marca registrada da Wizards of the Coast LLC.
+<br><br>
+<p>Nota: Este programa não é afiliado à Wizards of the Coast®. Magic: The Gathering é uma marca registrada da Wizards of the Coast LLC.</p>
