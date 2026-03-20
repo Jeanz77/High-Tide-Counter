@@ -14,7 +14,7 @@ Otimizado para Combo: Design focado na execução rápida de loops de mana e con
 <h3>🚀 Como Usar</h3>
 
 Basta acessar a página abaixo:
-https://high-tide-counter-hm5tfx2sb-jeans-projects-141a926c.vercel.app/
+https://high-tide-counter.vercel.app/
 
 
 <h3>📄 Licença</h3>
